@@ -97,6 +97,7 @@ function App() {
     if (attempts >= 5) {
       setTimeout(() => setOpenedCard([]), 1500);
       setTimeout(() => setAttempt(0), 1500);
+      setTimeout(() => setMatched([]), 500);
       return (
         <div>
           <h1 className="attempts">YOU LOST</h1>
